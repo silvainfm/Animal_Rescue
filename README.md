@@ -28,9 +28,10 @@ Each animal record will contain:
 * Sex
 * Adoption fee
 * Additional notes
-* MongoDB is chosen for its flexibility in storing semi-structured and evolving data.
-* Usage
 
+MongoDB is chosen for its flexibility in storing semi-structured and evolving data.
+
+## Usage
 The Flask interface will allow users to:
 * Create new animal records
 * Retrieve an animal's profile
