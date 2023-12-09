@@ -12,6 +12,11 @@ This project aims to build an animal rescue management system to help animal she
 * Manage adoption applications
 * Match animals to potential adopters using ML
 
+## Run the files in the zip 
+Specifically run docker compose up
+python data.py
+python run-app.py
+
 ## Data
 
 The data will consist of records for 20 dogs and 20 cats scraped from the Nashville Humane Association website.
@@ -20,21 +25,21 @@ Each animal record will contain:
 * Type
 * Name
 * ID
-* Picture
-* Birthdate
-* Weight
+* Age
 * Breed
 * Adoption status
 * Sex
 * Adoption fee
-* Additional notes
 
 MongoDB is chosen for its flexibility in storing semi-structured and evolving data.
 
 ## Usage
 The Flask interface will allow users to:
 * Create new animal records
-* Retrieve an animal's profile
+* Retrieve an animal's profile that fit their type
+* A random forest classifier will match adopters to animals to reduce the possibility that an animal will be given back.
+
+Using the backend users will be able to:
 * Update an animal's information
 * Provide endpoints for adopters to apply for adoption/fostering
 
@@ -63,12 +68,6 @@ db.adoptionApplications.insert({
 })
 ```
 
-## Timeline
-* Week 1: Submit proposal, create dataset
-* Week 2: Test MongoDB, run sample queries
-* Week 3: Work on Flask interface
-* Week 4: Final touches and deliverables
-
 ## Expected Output
 The project will showcase available animals for adoption in the Nashville area and allow rescue staff to manage and update animal records and adoption applications.
 
@@ -76,4 +75,3 @@ The project will showcase available animals for adoption in the Nashville area a
 * Web scraping to expand dataset
 * CLI interface for queries
 * REST API endpoints
-* Researching use of MongoDB with machine learning
