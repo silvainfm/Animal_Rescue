@@ -13,9 +13,9 @@ This project aims to build an animal rescue management system to help animal she
 * Match animals to potential adopters using ML
 
 ## Run the files in the zip 
-Specifically run docker compose up
-python data.py
-python run-app.py
+* Specifically run docker compose up
+* python data.py
+* python run-app.py
 
 ## Data
 
